@@ -1,6 +1,7 @@
 
 			.AppHeader {
-			    position: relative;
+				position: fixed;
+			    width: 100%;
 			    z-index: 100;
 			    min-width: 1032px;
 			    overflow: hidden;
@@ -10,7 +11,6 @@
 			    background-clip: content-box;
 			}
 			.AppHeader-inner {
-			    position: relative;
 			    display: -webkit-box;
 			    display: -ms-flexbox;
 			    display: flex;
@@ -114,7 +114,7 @@
 			.SearchBar-toolWrapper {
 			    position: relative;
 			    z-index: 104;
-			    width: 326px;
+			    width: 300px;
 			}
 			.SearchBar-tool {
 			    position: relative;
@@ -182,7 +182,6 @@
 			    border: none;
 			    resize: none;
 			}
-			user agent stylesheet
 			input {
 			    -webkit-writing-mode: horizontal-tb !important;
 			    text-rendering: auto;
@@ -262,7 +261,7 @@
 			
 			/* alert*/
 			.AppHeader-messages, .AppHeader-notifications {
-			    margin-right: 40px;
+			    margin-right: 70px;
 			}
 			.Popover {
 			    position: relative;

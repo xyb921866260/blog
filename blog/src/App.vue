@@ -1,25 +1,15 @@
-
- <transition
- 	mode="out-in"
- 	@before-enter="beforeEnter"
- 	@enter="enter"
- 
- 	@before-leave="beforeLeave"
- 	@leave="leave"
- 	:css="false">
- 
- </transition> <template>
+<template>
   <div id="app">
-    <Header />
+	  <Home></Home>
   </div>
 </template>
 
 <script>
-import Header from './view/header.vue'
+import Home from "./view/Home.vue" ;
 export default {
   name: 'app',
   components: {
-   Header 
+	  Home
   }
 }
 </script>
