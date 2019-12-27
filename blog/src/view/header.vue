@@ -49,7 +49,7 @@
 			  <div class="AppHeader-profile">
 				  <div class="Popover AppHeader-menu">
 					  <button type="button" id="Popover17-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover17-content" class="Button AppHeader-profileEntry Button--plain">
-						  <img class="Avatar AppHeader-profileAvatar" width="30" height="30" src="https://pic1.zhimg.com/v2-593341cb41444d62fd7d94e7a1110f13_is.jpg" srcset="https://pic1.zhimg.com/v2-593341cb41444d62fd7d94e7a1110f13_im.jpg 2x"></button>
+						  <img class="Avatar AppHeader-profileAvatar" width="30" height="30" src="https://pic1.zhimg.com/v2-593341cb41444d62fd7d94e7a1110f13_is.jpg" ></button>
 						  </div>
 						</div>
 			</div>		
