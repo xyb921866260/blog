@@ -76,7 +76,6 @@
 		overflow: hidden;
 		background: #fff;
 		margin-bottom: 20px;
-		height: 700px;
 	}
 	
 	.hometitle {

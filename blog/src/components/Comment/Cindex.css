@@ -252,14 +252,14 @@
     border-top: 1px solid #e5eaed;
 }
 .tmsg-c-item article{
-    margin:20px 0;
+    margin:10px 0;
 }
 .tmsg-c-item article header{
     margin-bottom:10px;
 }
 .tmsg-c-item article header img{
-    width: 65px;
-    height: 65px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     float: left;
     transition: all .4s ease-in-out;
@@ -293,7 +293,7 @@
     font-size: 12px;
 }
 .tmsg-c-item article section{
-    margin-left: 80px;
+    margin-left: 60px;
 }
 .tmsg-c-item article section p img{
     vertical-align: middle;

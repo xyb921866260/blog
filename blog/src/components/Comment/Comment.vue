@@ -15,7 +15,7 @@
                     </div>
 					<el-row class="tmsg-r-info">
 					    <el-col :span="24" class="info-submit">
-					        <p class="tcolors-bg" @click="sendMsg">{{sendTip}}</p>
+					        <p class="tcolors-bg sendMessage" @click="sendMsg">{{sendTip}}</p>
 					    </el-col>
 					</el-row>
 					
@@ -35,7 +35,11 @@
             <a href="#" class="tmsg-comments-tip">活捉 {{commentList?commentList.length:0}} 条</a>
             <div class="tmsg-commentshow">
                 <ul class="tmsg-commentlist">
-                    <li class="tmsg-c-item" v-for="(item,index) in commentList" :key="'common'+index">
+					
+					
+					
+                    <!-- <li class="tmsg-c-item" v-for="(item,index) in commentList" :key="'common'+index"> 
+						
                         <article class="">
                             <header>
                                 <img  :src="item.avatar"  :onerror="$store.state.errorImg">
@@ -80,7 +84,64 @@
                                 </article>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
+					
+					
+					
+					
+					<li class="tmsg-c-item" >
+						
+					    <article class="">
+					        <header>
+								<img src="../../images/QQ截图20191225180154.png" />
+					         <!--   <img  :src="item.avatar"  :onerror="$store.state.errorImg"> -->
+					            <div class="i-name">
+					             dfdf  
+					            </div>
+								<div class="i-class i-class1">
+								查看回复   
+								 </div>
+								<div class="i-class i-class0">
+								举报   
+								 </div>
+							
+					            <div class="i-time">
+					                <time>09点07分</time>
+					            </div>
+					        </header>
+					        <section>
+					            <p >fgsdfg</p>
+					            <div  class="tmsg-replay" >
+					                回复
+					            </div>
+					        </section>
+					    </article>
+					    <ul class="tmsg-commentlist" style="padding-left:60px;">
+					      <!--  <li class="tmsg-c-item" v-for="(citem,cindex) in item.ChildsSon" :key="'citem'+cindex"> -->
+						  <li class="tmsg-c-item" >
+					            <article class="">
+					                <header>
+					                       <img src="../../images/QQ截图20191225180154.png" />
+					                        <div class="i-name">
+					                           地方 <span>回复</span>地方
+					                        </div>
+					                        <div class="i-class">
+					                           地方
+					                        </div>
+					                        <div class="i-time">
+					                            <time>shiji</time>
+					                        </div>
+					                </header>
+					                <section>
+					                    <p >dfdf </p>
+					                    <div class="tmsg-replay">
+					                        回复
+					                    </div>
+					                </section>
+					            </article>
+					        </li>
+					    </ul>
+					</li>
 
                 </ul>
                 <h1 v-show='hasMore' class="tcolors-bg" @click="addMoreFun" >查看更多</h1>
@@ -286,5 +347,19 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+.sendMessage{
+	width: 80px;
+}
+.tmsg-commentlist{
+	padding: 0;
+}
+.i-class0{
+	float: right;
+	margin-top: 5px;
+}
+.i-class1{
+	float: right;
+	margin-top: 5px;
 }
 </style>
