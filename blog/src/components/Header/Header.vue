@@ -142,7 +142,7 @@
 	      display: -webkit-box;
 	      display: -ms-flexbox;
 	      display: flex;
-	      margin: 0 23px;
+	      margin: 0 5px;
 	  }
 	  .Tabs {
 	      border-bottom: 1px solid #f6f6f6;
@@ -166,7 +166,7 @@
 	  }
 	  .Tabs-item {
 	      display: inline-block;
-	      padding: 0 20px;
+	      padding: 0 15px;
 	  }
 	  
 	  li {

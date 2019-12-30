@@ -20,7 +20,7 @@
 	/*tags*/
 	.cloud { width: 100%; clear: both; overflow: hidden; background: #fff; margin-bottom: 20px }
 	.cloud ul { padding: 20px; overflow: hidden; }
-	.cloud ul a { line-height: 24px; height: 24px; display: block; background: #999; float: left; padding: 3px 11px; margin: 10px 10px 0 0; border-radius: 8px; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; color: #FFF }
+	.cloud ul a { line-height: 24px; display: block; background: #999; float: left; padding: 3px 11px; margin: 10px 10px 0 0; border-radius: 8px; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; color: #FFF }
 	.cloud ul a:nth-child(8n-7) { background: #8A9B0F }
 	.cloud ul a:nth-child(8n-6) { background: #EB6841 }
 	.cloud ul a:nth-child(8n-5) { background: #3FB8AF }

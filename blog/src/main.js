@@ -4,7 +4,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 import App from './App.vue';
 import mavonEditor from 'mavon-editor';
 import 'mavon-editor/dist/css/index.css';
-
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
 
 
 Vue.use(mavonEditor);
