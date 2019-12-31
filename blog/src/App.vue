@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-	  <Writing />
+	  <Login />
   </div>
 </template>
 
@@ -8,11 +8,11 @@
 import Home from "./view/Home.vue" ;
 import ArticleInfo from "./view/ArticleInfo.vue";
 import Writing from "./view/Writing.vue";
-// import Login from "./view/Login.vue";
+import Login from "./view/Login.vue";
 export default {
   name: 'app',
   components: {
-	Writing
+	Home,Login,Writing
   }
 }
 </script>

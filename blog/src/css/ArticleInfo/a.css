@@ -21,6 +21,7 @@ body {
 		width: 1000px;
 		height: 1000px;
 		margin: 0px auto;
+		direction: initial;
 	}
 
 	.Topstory-mainColumn1 {
