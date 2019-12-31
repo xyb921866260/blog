@@ -1,10 +1,11 @@
-html,body {
+html,
+body {
 	height: 100%;
 }
 
 body.my-login-page {
 	font-size: 14px;
-	
+
 }
 
 .my-login-page .brand {
@@ -13,7 +14,7 @@ body.my-login-page {
 	overflow: hidden;
 	border-radius: 50%;
 	margin: 0 auto;
-	box-shadow: 0 0 40px rgba(0,0,0,.05);
+	box-shadow: 0 0 40px rgba(0, 0, 0, .05);
 	margin-top: 150px;
 	margin-bottom: 0px;
 }
@@ -28,7 +29,7 @@ body.my-login-page {
 
 .my-login-page .card {
 	border-color: transparent;
-	box-shadow: 0 0 40px rgba(0,0,0,.05);
+	box-shadow: 0 1px 3px rgba(26,26,26,.6);
 }
 
 .my-login-page .card.fat {
@@ -63,4 +64,22 @@ body.my-login-page {
 	margin: 40px 0;
 	color: #888;
 	text-align: center;
+}
+
+.card-title:after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 0;
+	right: inherit;
+	top: 60px;
+	left: 0;
+	bottom: 0px;
+	background: #333;
+	transition: 2s ease all;
+}
+
+.card-title:hover:after {
+	width: 100%;
+	transition: 2s ease all;
 }

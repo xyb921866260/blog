@@ -1,7 +1,6 @@
 <template>
 	<div class="tools">
 		<h2 class="hometitle">工具</h2>
-
 	</div>
 </template>
 
