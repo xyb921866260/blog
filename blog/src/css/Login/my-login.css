@@ -8,20 +8,6 @@ body.my-login-page {
 
 }
 
-.my-login-page .brand {
-	width: 150px;
-	height: 150px;
-	overflow: hidden;
-	border-radius: 50%;
-	margin: 0 auto;
-	box-shadow: 0 0 40px rgba(0, 0, 0, .05);
-	margin-top: 150px;
-	margin-bottom: 0px;
-}
-
-.my-login-page .brand img {
-	width: 100%;
-}
 
 .my-login-page .card-wrapper {
 	width: 400px;
@@ -34,6 +20,7 @@ body.my-login-page {
 
 .my-login-page .card.fat {
 	padding: 10px;
+	margin-top: 120px;
 }
 
 .my-login-page .card .card-title {

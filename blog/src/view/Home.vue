@@ -12,7 +12,8 @@
 					<div class="Card Topstory-noMarginCard Topstory-tabCard">
 						<nav class="TopstoryTabs Topstory-tabs">
 							<a aria-controls="Topstory-recommend" class="TopstoryTabs-link Topstory-tabsLink is-active" href="/">推荐</a>
-							<a aria-controls="Topstory-follow" class="TopstoryTabs-link Topstory-tabsLink" href="/follow">关注</a>
+							<a aria-con
+							trols="Topstory-follow" class="TopstoryTabs-link Topstory-tabsLink" href="/follow">关注</a>
 							<a aria-controls="Topstory-hot" class="TopstoryTabs-link Topstory-tabsLink" href="/hot">热榜</a>
 						</nav>
 					</div>
@@ -36,7 +37,9 @@
 				</div>
 				<div class="GlobalSideBar">
 					<div><SearchBar/></div>
-					<div class="userinfo"></div>
+					<div class="userinfo">
+						<router-link to='login'>登录</router-link>
+					</div>
 					<div class="tagscloud"><TagCloud /></div>
 					<div class="tools">
                               <Tools />
