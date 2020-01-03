@@ -8,13 +8,7 @@
 </script>
 
 <style>
-	.tools {
-		width: 100%;
-		clear: both;
-		overflow: hidden;
-		background: #fff;
-		margin-bottom: 20px;
-	}
+
 
 	.hometitle {
 		padding: 0 10px;

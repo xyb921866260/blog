@@ -15,7 +15,7 @@ export default new Router({
 			}
 			return {
 				x: 0,
-				y: top
+				y: 0
 			}
 		}
 	},
@@ -25,23 +25,52 @@ export default new Router({
 			meta: {
 				auth: false
 			},
-			name: 'Home'
+			children:[
+				{
+					path:'/',
+					component: resolve => require(["../components/Index/Index"],resolve),
+					name:'Index'
+				},
+				{
+					path:'/articleInfo',
+					component: resolve => require(["../components/ArticleInfo/ArticleInfo"],resolve),
+					name:'ArticleInfo'
+				}
+			]
 		},
 		{
-			path: '/login',
-			component: resolve => require(["../view/Login"], resolve),
+			path: '/sign',
+			component: resolve => require(["../view/Sign"], resolve),
 			meta: {
 				auth: false
 			},
-			name: 'Login'
+			children:[
+				{
+					path:'/',
+					component:resolve =>require(["../components/Login/Login"],resolve),
+					name:'Login'
+				},
+				{
+					path:'/sign/register',
+					component:resolve =>require(["../components/Register/Register"],resolve),
+					name:'Register'
+					
+				},
+				{
+					path:'/sign/forgot',
+					component:resolve =>require(["../components/Forgot/Forgot"],resolve),
+					name:'Forgot'
+				}
+			]
+			
 		},
 		{
-			path: '/articleInfo',
-			component: resolve => require(["../view/ArticleInfo"], resolve),
+			path: '/writing',
+			component: resolve => require(["../view/Writing"], resolve),
 			meta: {
 				auth: false
 			},
-			name: 'ArticleInfo'
+			name: 'Writing'
 		}
 	]
 })

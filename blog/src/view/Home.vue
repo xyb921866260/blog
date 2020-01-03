@@ -4,66 +4,20 @@
 			<Header ></Header>
 		</el-header>
 		<el-main>
-			<div class="Topstory">
-
-
-				<div class="Topstory-mainColumn">
-                     <!-- 信息头部 -->
-					<div class="Card Topstory-noMarginCard Topstory-tabCard">
-						<nav class="TopstoryTabs Topstory-tabs">
-							<a aria-controls="Topstory-recommend" class="TopstoryTabs-link Topstory-tabsLink is-active" href="/">推荐</a>
-							<a aria-con
-							trols="Topstory-follow" class="TopstoryTabs-link Topstory-tabsLink" href="/follow">关注</a>
-							<a aria-controls="Topstory-hot" class="TopstoryTabs-link Topstory-tabsLink" href="/hot">热榜</a>
-						</nav>
-					</div>
-					<!-- 文章主体 -->
-					<div class="articlebody" >
-						
-						<ArticleList></ArticleList>
-						<ArticleList></ArticleList>
-						<ArticleList></ArticleList>
-						<ArticleList></ArticleList>
-						<div class="pagelist">
-							<el-pagination
-						  background
-						  layout="prev, pager, next"
-						  :total="1000">
-						</el-pagination>
-						</div>
-						
-					</div>
-					
-				</div>
-				<div class="GlobalSideBar">
-					<div><SearchBar/></div>
-					<div class="userinfo">
-						<router-link to='login'>登录</router-link>
-					</div>
-					<div class="tagscloud"><TagCloud /></div>
-					<div class="tools">
-                              <Tools />
-                    </div>
-				</div>
-
-			</div>
-
-
+			<UserInfo></UserInfo>
+			<!-- <router-view></router-view> -->
 		</el-main>
 
 	</el-container>
 </template>
 
 <script>
+	import UserInfo from "../components/UserInfo/UserInfo.vue";
 	import Header from "../components/Header/Header.vue";
-	import SearchBar from "../components/SeatchBar/SearchBar.vue";
-	import ArticleList from "../components/ArticleList/ArticleList.vue";
-	import TagCloud from "../components/TagsCloud/TagsCloud.vue";
-	import Tools from "../components/Tools/Tools.vue";
 	export default {
 		name: 'app',
 		components: {
-			Header,SearchBar,ArticleList,TagCloud,Tools
+			Header,UserInfo
 		}
 	}
 </script>
@@ -103,7 +57,6 @@
 	}
 	.tools{
 		width: 100%;
-		height: 220px;
 		background: #FFFFFF;
 		box-shadow: 0 1px 3px rgba(26,26,26,.1);
 	}

@@ -32,7 +32,7 @@
 				</button>
 			</div>
 			<div class="margin-top20 text-center">
-				Already have an account? <a href="index.html">Login</a>
+				Already have an account? <router-link to="/sign">Login</router-link>
 			</div>
 		</form>
 	</div>

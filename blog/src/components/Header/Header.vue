@@ -6,22 +6,7 @@
 			
 			
 			
-<!-- 			<div class="SearchBar" >
-				<div class="SearchBar-toolWrapper">
-					<div class="SearchBar-tool">
-						<div class="Popover">
-							<label class="SearchBar-input Input-wrapper Input-wrapper--grey">
-								<input type="text" maxlength="100" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="AutoComplete2-topSearch--1" id="Popover1-toggle" aria-haspopup="true" aria-owns="Popover1-content" class="Input" placeholder="蓝牙音箱推荐" value="">
-								<button aria-label="搜索" type="button" class="Button SearchBar-searchButton Button--primary">
-									<span style="display: inline-flex; align-items: center;">
-									<i class="fa fa-search " aria-hidden="true"></i>
-										</span>
-										</button>
-										</label>
-							</div>
-					</div>
-					</div>
-			</div> -->
+
 	        <div class="AppHeader-userInfo"> 
 			<div class="weather">
 				<iframe width="200" scrolling="no" height="45" frameborder="0" allowtransparency="true" src="//i.tianqi.com/index.php?c=code&id=12&icon=5&num=1&site=12"></iframe>
@@ -35,11 +20,11 @@
 						<a class="Tabs-link AppHeader-TabsLink" href="//www.zhihu.com/question/waiting" >等你来答</a></li>
 						</ul>
 						
-			
+			 <div class="alert-box">
 		  	  <div class="Popover PushNotifications AppHeader-notifications">
 				<button type="button" id="Popover15-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover15-content" class="Button PushNotifications-icon Button--plain">
 					<span style="display: inline-flex; align-items: center;">
-						<el-badge :value="12" class="item">
+					<el-badge :value="12" class="item">
 						  <i class="fa fa-bell  fa-lg" aria-hidden="true" />
 						</el-badge>
 						
@@ -55,13 +40,10 @@
 						 </span>
 				 </button>
 			  </div> 
-			  
+			  </div>	
 			  <div class="AppHeader-profile">
 				  <div class="Popover AppHeader-menu">
-<!-- 					  <button type="button" id="Popover17-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover17-content" class="Button AppHeader-profileEntry Button--plain">
-						  <img  class="Avatar AppHeader-profileAvatar" width="30" height="30" src="https://pic1.zhimg.com/v2-593341cb41444d62fd7d94e7a1110f13_is.jpg" >
-						  
-						  </button> -->
+
 						  
 						<el-dropdown>
 						  <img  class="Avatar AppHeader-profileAvatar" width="35" height="35" src="https://pic1.zhimg.com/v2-593341cb41444d62fd7d94e7a1110f13_is.jpg" >
@@ -360,7 +342,7 @@
 	      flex: 1 1;
 	      -webkit-box-pack: end;
 	      -ms-flex-pack: end;
-	      justify-content: flex-end;
+	      justify-content: space-between;
 	      display: -webkit-box;
 	      display: -ms-flexbox;
 	      display: flex;
@@ -368,11 +350,15 @@
 	      -ms-flex-align: center;
 	      align-items: center;
 	  }
+	  .el-badge__content{
+		  background-color: rgb(241,64,60);
+	  }
 	  
 	  /* alert*/
-	  .AppHeader-messages, .AppHeader-notifications {
-	      margin-right: 70px;
-	  }
+	  .alert-box {
+	      display: flex;
+		  flex-direction: row;
+		  padding:0px 30px 0px 30px	  }
 	  .Popover {
 	      position: relative;
 	      display: inline-block;
@@ -398,6 +384,9 @@
 	  img[Attributes Style] {
 	      width: 30px;
 	      height: 30px;
+	  }
+	  .AppHeader-notifications{
+		  margin-right: 30px;
 	  }
 	  	
 </style>
